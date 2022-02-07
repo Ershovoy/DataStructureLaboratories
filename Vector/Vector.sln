@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "Vector\Vector.vcxproj", "{7D786874-E330-4B4E-AE10-3677D9F529F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "laboratory1", "laboratory1.vcxproj", "{7D786874-E330-4B4E-AE10-3677D9F529F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {899C8ACE-B6C8-4D33-AEB9-8BF9733AD98D}
+		SolutionGuid = {037CE420-E2F8-425B-A7EC-A4DD1DD6E61E}
 	EndGlobalSection
 EndGlobal
