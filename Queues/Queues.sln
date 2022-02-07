@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "Vector\Vector.vcxproj", "{7D786874-E330-4B4E-AE10-3677D9F529F0}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queues", "Queues\Queues.vcxproj", "{DEB399D2-3DAE-4C8D-879C-329C07059B94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "laboratory3", "laboratory3.vcxproj", "{DEB399D2-3DAE-4C8D-879C-329C07059B94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Debug|x64.ActiveCfg = Debug|x64
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Debug|x64.Build.0 = Debug|x64
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Debug|x86.ActiveCfg = Debug|Win32
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Debug|x86.Build.0 = Debug|Win32
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x64.ActiveCfg = Release|x64
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x64.Build.0 = Release|x64
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x86.ActiveCfg = Release|Win32
-		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x86.Build.0 = Release|Win32
 		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x64.ActiveCfg = Debug|x64
 		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x64.Build.0 = Debug|x64
 		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x86.ActiveCfg = Debug|Win32
@@ -36,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {899C8ACE-B6C8-4D33-AEB9-8BF9733AD98D}
+		SolutionGuid = {D6DE370E-364B-4FEC-A88F-98811E062CFC}
 	EndGlobalSection
 EndGlobal
