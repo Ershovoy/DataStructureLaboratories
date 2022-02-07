@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "Vector\Vector.vcxproj", "{7D786874-E330-4B4E-AE10-3677D9F529F0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HashMap", "HashMap\HashMap.vcxproj", "{FE9C089C-2976-4E9E-B13E-4C64B9EFC385}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoubleLinkedList", "DoubleLinkedList\DoubleLinkedList.vcxproj", "{C072E9CE-C19A-42E4-89CA-DECA3369F271}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeAndTreep", "BinaryTreeAndTreep\BinaryTreeAndTreep.vcxproj", "{E1E9E8A0-176D-43B9-BDFE-19A33F2A2157}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "laboratory6", "laboratory6\laboratory6.vcxproj", "{69120190-FB2D-4874-BE19-C69278767A24}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queues", "Queues\Queues.vcxproj", "{DEB399D2-3DAE-4C8D-879C-329C07059B94}"
 EndProject
 Global
@@ -23,14 +31,6 @@ Global
 		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x64.Build.0 = Release|x64
 		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x86.ActiveCfg = Release|Win32
 		{7D786874-E330-4B4E-AE10-3677D9F529F0}.Release|x86.Build.0 = Release|Win32
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x64.ActiveCfg = Debug|x64
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x64.Build.0 = Debug|x64
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x86.ActiveCfg = Debug|Win32
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Debug|x86.Build.0 = Debug|Win32
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Release|x64.ActiveCfg = Release|x64
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Release|x64.Build.0 = Release|x64
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Release|x86.ActiveCfg = Release|Win32
-		{DEB399D2-3DAE-4C8D-879C-329C07059B94}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
