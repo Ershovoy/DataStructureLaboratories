@@ -11,7 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoubleLinkedList", "DoubleL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeAndTreep", "BinaryTreeAndTreep\BinaryTreeAndTreep.vcxproj", "{E1E9E8A0-176D-43B9-BDFE-19A33F2A2157}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RedBlackAndAVLTree", "RedBlackAndAVLTree\RedBlackAndAVLTree.vcxproj", "{69120190-FB2D-4874-BE19-C69278767A24}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "laboratory6", "laboratory6\laboratory6.vcxproj", "{69120190-FB2D-4874-BE19-C69278767A24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
