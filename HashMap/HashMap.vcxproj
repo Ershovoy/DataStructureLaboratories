@@ -147,11 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="scr\IOHashMap.cpp" />
     <ClCompile Include="scr\Map.cpp" />
     <ClCompile Include="scr\HashMap.cpp" />
     <ClCompile Include="scr\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="scr\IOHashMap.h" />
     <ClInclude Include="scr\Map.h" />
     <ClInclude Include="scr\HashMap.h" />
   </ItemGroup>
