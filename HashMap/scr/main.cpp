@@ -7,5 +7,8 @@ int main()
 
 	printHashMapMenu(*hashMap, *map);
 
+	delete hashMap;
+	delete map;
+
 	return 0;
 }
