@@ -1,4 +1,4 @@
-#include "Node.h"
+﻿#include "Node.h"
 
 Node* Node::InsertLeft(int value)
 {

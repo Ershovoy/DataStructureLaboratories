@@ -1,4 +1,4 @@
-#include "RBTree.h"
+ï»¿#include "RBTree.h"
 
 RBTree::RBTree() : _root{ nullptr }, _nodeRotateCount{ 0 }
 {
@@ -43,7 +43,7 @@ RBTreeNode* RBTree::Delete(RBTreeNode* node, int key, bool& isBalanced)
 
 	if (node->Key == key)
 	{
-		// Óäàëÿåìûé óçåë èìååò õîòÿ áû îäèíîãî ðåá¸íêà.
+		// Ð£Ð´Ð°Ð»ÑÐµÐ¼Ñ‹Ð¹ ÑƒÐ·ÐµÐ» Ð¸Ð¼ÐµÐµÑ‚ Ñ…Ð¾Ñ‚Ñ Ð±Ñ‹ Ð¾Ð´Ð¸Ð½Ð¾Ð³Ð¾ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ°.
 		if (node->Child[Left] == nullptr || node->Child[Right] == nullptr)
 		{
 			RBTreeNode* singleChild = nullptr;
@@ -56,13 +56,13 @@ RBTreeNode* RBTree::Delete(RBTreeNode* node, int key, bool& isBalanced)
 				singleChild = node->Child[Right];
 			}
 
-			// Ïðè óäàëåíèè êðàñíîãî óçëà ñ îäíèì ðåá¸íêîì áàëàíñ íå íàðóøèòñÿ.
+			// ÐŸÑ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸ ÐºÑ€Ð°ÑÐ½Ð¾Ð³Ð¾ ÑƒÐ·Ð»Ð° Ñ Ð¾Ð´Ð½Ð¸Ð¼ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ¾Ð¼ Ð±Ð°Ð»Ð°Ð½Ñ Ð½Ðµ Ð½Ð°Ñ€ÑƒÑˆÐ¸Ñ‚ÑÑ.
 			if (IsRed(node))
 			{
 				delete node;
 				isBalanced = true;
 			}
-			// Ïðè óäàëåíèè ÷¸ðíîãî óçëà ñ îäíèì ðåá¸íêîì, íóæíî ïåðåêðàñèòü ðåá¸íêà â ÷¸ðíûé, èíà÷å áàëàíñ íàðóøèòñÿ.
+			// ÐŸÑ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸ Ñ‡Ñ‘Ñ€Ð½Ð¾Ð³Ð¾ ÑƒÐ·Ð»Ð° Ñ Ð¾Ð´Ð½Ð¸Ð¼ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ¾Ð¼, Ð½ÑƒÐ¶Ð½Ð¾ Ð¿ÐµÑ€ÐµÐºÑ€Ð°ÑÐ¸Ñ‚ÑŒ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ° Ð² Ñ‡Ñ‘Ñ€Ð½Ñ‹Ð¹, Ð¸Ð½Ð°Ñ‡Ðµ Ð±Ð°Ð»Ð°Ð½Ñ Ð½Ð°Ñ€ÑƒÑˆÐ¸Ñ‚ÑÑ.
 			else if (IsRed(singleChild))
 			{
 				singleChild->IsBlack = true;
@@ -73,12 +73,12 @@ RBTreeNode* RBTree::Delete(RBTreeNode* node, int key, bool& isBalanced)
 			{
 				delete node;
 			}
-			// Âîçâðàùàåì åäèíñòâåííîãî ðåá¸íêà óäàë¸ííîãî óçëà èëè nullptr
+			// Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÐ¼ ÐµÐ´Ð¸Ð½ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ° ÑƒÐ´Ð°Ð»Ñ‘Ð½Ð½Ð¾Ð³Ð¾ ÑƒÐ·Ð»Ð° Ð¸Ð»Ð¸ nullptr
 			return singleChild;
 		}
 		else
 		{
-			// Óäàëÿåìûé óçåë èìååò äâà ðåá¸íêà => èùåì ìàêñèìóì â ëåâîì ïîääåðåâå è çàìåíÿåì åãî íà óäàëÿåìûé óçåë.
+			// Ð£Ð´Ð°Ð»ÑÐµÐ¼Ñ‹Ð¹ ÑƒÐ·ÐµÐ» Ð¸Ð¼ÐµÐµÑ‚ Ð´Ð²Ð° Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ° => Ð¸Ñ‰ÐµÐ¼ Ð¼Ð°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð² Ð»ÐµÐ²Ð¾Ð¼ Ð¿Ð¾Ð´Ð´ÐµÑ€ÐµÐ²Ðµ Ð¸ Ð·Ð°Ð¼ÐµÐ½ÑÐµÐ¼ ÐµÐ³Ð¾ Ð½Ð° ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ñ‹Ð¹ ÑƒÐ·ÐµÐ».
 			RBTreeNode* maximum = node->Child[Left];
 			while (maximum->Child[Right] != nullptr)
 			{
@@ -101,7 +101,7 @@ RBTreeNode* RBTree::DeleteFix(RBTreeNode* node, bool direction, bool& isBalanced
 	RBTreeNode* parent = node;
 	RBTreeNode* sibling = node->Child[!direction];
 
-	// Áðàò êðàñíûé, âûïîëíÿåì ïîâîðîò, ÷òîáû ïîëó÷èòü LL èëè RR, à íå LR èëè RL.
+	// Ð‘Ñ€Ð°Ñ‚ ÐºÑ€Ð°ÑÐ½Ñ‹Ð¹, Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ LL Ð¸Ð»Ð¸ RR, Ð° Ð½Ðµ LR Ð¸Ð»Ð¸ RL.
 	if (IsRed(sibling))
 	{
 		node = Rotate(node, direction);
@@ -110,7 +110,7 @@ RBTreeNode* RBTree::DeleteFix(RBTreeNode* node, bool direction, bool& isBalanced
 
 	if (sibling)
 	{
-		// Ðîäíîé áðàò ÷¸ðíûé ñ îäíèì ÷¸ðíûì ðåá¸íêîì.
+		// Ð Ð¾Ð´Ð½Ð¾Ð¹ Ð±Ñ€Ð°Ñ‚ Ñ‡Ñ‘Ñ€Ð½Ñ‹Ð¹ Ñ Ð¾Ð´Ð½Ð¸Ð¼ Ñ‡Ñ‘Ñ€Ð½Ñ‹Ð¼ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ¾Ð¼.
 		if (!IsRed(sibling->Child[Left]) && !IsRed(sibling->Child[Right]))
 		{
 			if (IsRed(parent))
@@ -120,12 +120,12 @@ RBTreeNode* RBTree::DeleteFix(RBTreeNode* node, bool direction, bool& isBalanced
 			parent->IsBlack = true;
 			sibling->IsBlack = false;
 		}
-		// Ðîäíîé áðàò ÷¸ðíûé áåç êðàñíûõ äî÷åðíèõ óçëîâ.
+		// Ð Ð¾Ð´Ð½Ð¾Ð¹ Ð±Ñ€Ð°Ñ‚ Ñ‡Ñ‘Ñ€Ð½Ñ‹Ð¹ Ð±ÐµÐ· ÐºÑ€Ð°ÑÐ½Ñ‹Ñ… Ð´Ð¾Ñ‡ÐµÑ€Ð½Ð¸Ñ… ÑƒÐ·Ð»Ð¾Ð².
 		else
 		{
-			// Ñîõðàíÿåì öâåò ðîäèòåëÿ, ÷òîáû öâåò çàìåíÿþùåãî åãî óçëà áûë òàêîé æå.
+			// Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼ Ñ†Ð²ÐµÑ‚ Ñ€Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ñ†Ð²ÐµÑ‚ Ð·Ð°Ð¼ÐµÐ½ÑÑŽÑ‰ÐµÐ³Ð¾ ÐµÐ³Ð¾ ÑƒÐ·Ð»Ð° Ð±Ñ‹Ð» Ñ‚Ð°ÐºÐ¾Ð¹ Ð¶Ðµ.
 			bool parentColor = parent->IsBlack;
-			// Áðàò áûë êðàñíûé, çíà÷èò äî ýòîãî áûë âûïîëíåí ïîâîðîò => ìåíÿåì ðåá¸íêà íà ðîäèòåëÿ.
+			// Ð‘Ñ€Ð°Ñ‚ Ð±Ñ‹Ð» ÐºÑ€Ð°ÑÐ½Ñ‹Ð¹, Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ Ð´Ð¾ ÑÑ‚Ð¾Ð³Ð¾ Ð±Ñ‹Ð» Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½ Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚ => Ð¼ÐµÐ½ÑÐµÐ¼ Ñ€ÐµÐ±Ñ‘Ð½ÐºÐ° Ð½Ð° Ñ€Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ.
 			bool isSiblingRed = !(node == parent);
 
 			if (IsRed(sibling->Child[!direction]))
@@ -186,7 +186,7 @@ RBTreeNode* RBTree::InsertFix(RBTreeNode* node, bool direction)
 {
 	if (IsRed(node->Child[direction]))
 	{
-		// ñëó÷àé 1: êîãäà äÿäÿ êðàñíûé, äëÿ äâóõ êðàñíûõ óçëîâ èäóùèõ ïîäðÿä => ìåíÿåì öâåò.
+		// ÑÐ»ÑƒÑ‡Ð°Ð¹ 1: ÐºÐ¾Ð³Ð´Ð° Ð´ÑÐ´Ñ ÐºÑ€Ð°ÑÐ½Ñ‹Ð¹, Ð´Ð»Ñ Ð´Ð²ÑƒÑ… ÐºÑ€Ð°ÑÐ½Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð² Ð¸Ð´ÑƒÑ‰Ð¸Ñ… Ð¿Ð¾Ð´Ñ€ÑÐ´ => Ð¼ÐµÐ½ÑÐµÐ¼ Ñ†Ð²ÐµÑ‚.
 		if (IsRed(node->Child[!direction]))
 		{
 			if (IsRed(node->Child[direction]->Child[direction]) || IsRed(node->Child[direction]->Child[!direction]))
@@ -196,15 +196,15 @@ RBTreeNode* RBTree::InsertFix(RBTreeNode* node, bool direction)
 		}
 		else
 		{
-			// case 2 : êîãäà äÿäÿ ÷¸ðíûé
+			// case 2 : ÐºÐ¾Ð³Ð´Ð° Ð´ÑÐ´Ñ Ñ‡Ñ‘Ñ€Ð½Ñ‹Ð¹
 			if (IsRed(node->Child[direction]->Child[direction]))
 			{
-				// Äâà êðàñíûõ óçëà èäóùèõ ïîäðÿä LL RR = ïîâîðîò.
+				// Ð”Ð²Ð° ÐºÑ€Ð°ÑÐ½Ñ‹Ñ… ÑƒÐ·Ð»Ð° Ð¸Ð´ÑƒÑ‰Ð¸Ñ… Ð¿Ð¾Ð´Ñ€ÑÐ´ LL RR = Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚.
 				node = Rotate(node, !direction);
 			}
 			else if (IsRed(node->Child[direction]->Child[!direction]))
 			{
-				// Äâà êðàñíûõ óçëà èäóùèõ ïîäðÿä LR RL => äâîéíîé ïîâîðîò.
+				// Ð”Ð²Ð° ÐºÑ€Ð°ÑÐ½Ñ‹Ñ… ÑƒÐ·Ð»Ð° Ð¸Ð´ÑƒÑ‰Ð¸Ñ… Ð¿Ð¾Ð´Ñ€ÑÐ´ LR RL => Ð´Ð²Ð¾Ð¹Ð½Ð¾Ð¹ Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚.
 				node->Child[direction] = Rotate(node->Child[direction], direction);
 				node = Rotate(node, !direction);
 				//node = DoubleRotate(node, !direction);

@@ -1,4 +1,4 @@
-#include "BinaryTree.h"
+﻿#include "BinaryTree.h"
 
 BinaryTree::BinaryTree() : _root(nullptr), _depth{ 0 }
 {

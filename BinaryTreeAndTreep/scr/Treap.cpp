@@ -1,4 +1,4 @@
-#include "Treap.h"
+﻿#include "Treap.h"
 
 Treap::Treap() : _root{ nullptr }
 {

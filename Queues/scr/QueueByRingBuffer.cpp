@@ -1,4 +1,4 @@
-#include "QueueByRingBuffer.h"
+﻿#include "QueueByRingBuffer.h"
 
 QueueByRingBuffer::~QueueByRingBuffer()
 {

@@ -1,4 +1,4 @@
-#include "QueueByStack.h"
+﻿#include "QueueByStack.h"
 
 void QueueByStack::Enqueue(int value)
 {

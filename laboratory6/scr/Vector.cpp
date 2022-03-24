@@ -1,4 +1,4 @@
-#include "Vector.h"
+﻿#include "Vector.h"
 
 template<typename Type>
 Vector<Type>::Vector() : _capacity{ 8 }, _size{ 0 }, _growthFactor{ 1.5 }

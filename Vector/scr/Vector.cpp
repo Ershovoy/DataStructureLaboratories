@@ -1,4 +1,4 @@
-#include "Vector.h"
+﻿#include "Vector.h"
 
 void Reserve(Vector& vector, int capacity)
 {

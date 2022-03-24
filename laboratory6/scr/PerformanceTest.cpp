@@ -1,4 +1,4 @@
-#include "PerformanceTest.h"
+﻿#include "PerformanceTest.h"
 
 template<class TreeType>
 string GetTreePerformanceMeasurement(TreeType* tree)
